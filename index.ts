@@ -1,11 +1,12 @@
 
 function binarySearch(list: number[], firstIndex: number, lastIndex: number, numberToSearch: number): number {
     let middleIndex: number = Math.ceil((firstIndex + lastIndex) / 2);
-    if(list[middleIndex] < numberToSearch) {
+    const number: number = list[middleIndex];
+    if(number == numberToSearch) return middleIndex;
+    else if(number < numberToSearch)
         return binarySearch(list, middleIndex++, lastIndex, numberToSearch);
-    } else if(list[middleIndex] > numberToSearch) {
+    else if(number > numberToSearch)
         return binarySearch(list, 0, middleIndex--, numberToSearch);
-    } else if(list[middleIndex] == numberToSearch) return middleIndex;
     return -1;
 }
 
