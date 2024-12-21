@@ -1,4 +1,10 @@
-
+/**
+ * function applying search binary using function factorial
+ * @param list
+ * @param firstIndex
+ * @param lastIndex
+ * @param numberToSearch
+ */
 function binarySearch(list: number[], firstIndex: number, lastIndex: number, numberToSearch: number): number {
     if(lastIndex - firstIndex == 1) return -1;
     let middleIndex: number = Math.ceil((firstIndex + lastIndex) / 2);
@@ -11,6 +17,11 @@ function binarySearch(list: number[], firstIndex: number, lastIndex: number, num
     return -1;
 }
 
+/**
+ *
+ * @param numberList
+ * @param number
+ */
 export function bs(numberList: number[], number: number): number {
     return binarySearch(numberList, 0, numberList.length - 1, number);
 }
