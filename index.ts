@@ -1,5 +1,6 @@
 
 function binarySearch(list: number[], firstIndex: number, lastIndex: number, numberToSearch: number): number {
+    if(lastIndex - firstIndex == 1) return -1;
     let middleIndex: number = Math.ceil((firstIndex + lastIndex) / 2);
     const number: number = list[middleIndex];
     if(number == numberToSearch) return middleIndex;
