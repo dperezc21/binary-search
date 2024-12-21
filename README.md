@@ -1,7 +1,7 @@
-# binary-search-library
+# binary-search-library  
 
 
-#### implementing binary search using factorial function to find index of a number list sorted
+#### implementing binary search using factorial function to find index of a number list sorted  
 
 ```
 import binarySearch from 'binary-search-2';
