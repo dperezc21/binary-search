@@ -18,12 +18,43 @@ function binarySearch(list: number[], firstIndex: number, lastIndex: number, num
 }
 
 /**
+ * binary search to find index of a number without use factorial function
+ * @param list
+ * @param firstIndex
+ * @param lastIndex
+ * @param numberToSearch
+ */
+function binarySearch2(list: number[], firstIndex: number, lastIndex: number, numberToSearch: number): number {
+
+    while(true) {
+        if(lastIndex - firstIndex == 1) return -1;
+        let middleIndex: number = Math.ceil((firstIndex + lastIndex) / 2);
+        const middleIndexNumber: number = list[middleIndex];
+        if(middleIndexNumber == numberToSearch) return middleIndex;
+        else if(middleIndexNumber < numberToSearch) firstIndex = middleIndex++;
+        else if(middleIndexNumber > numberToSearch){
+            firstIndex = 0;
+            lastIndex = middleIndex--;
+        } else return -1;
+    }
+}
+
+/**
+ *
+ * @param list
+ */
+function sortNumbers(list: number[]): number[] {
+    return list.sort((a: number, b: number) => a-b);
+}
+
+/**
  *
  * @param numberList
  * @param number
  * return numberIndex else -1
  */
 export function bs(numberList: number[], number: number): number {
-    return binarySearch(numberList, 0, numberList.length - 1, number);
+    const numbersSorted: number[] = sortNumbers(numberList);
+    return binarySearch2(numbersSorted, 0, numbersSorted.length - 1, number);
 }
 
