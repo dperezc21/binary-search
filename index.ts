@@ -21,6 +21,7 @@ function binarySearch(list: number[], firstIndex: number, lastIndex: number, num
  *
  * @param numberList
  * @param number
+ * return numberIndex else -1
  */
 export function bs(numberList: number[], number: number): number {
     return binarySearch(numberList, 0, numberList.length - 1, number);
