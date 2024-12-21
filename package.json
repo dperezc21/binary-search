@@ -7,8 +7,12 @@
     "start": "nodemon dist/index.js",
     "tsc": "tsc -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dperezc21/binary-search-library.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Davier Enrique Perez Cabrera",
   "license": "ISC",
   "description": "",
   "devDependencies": {
