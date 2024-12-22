@@ -1,6 +1,6 @@
 {
   "name": "binary-search-2",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest dist/tests",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dperezc21/binary-search-library.git"
+    "url": "https://github.com/dperezc21/binary-search.git"
   },
   "keywords": [],
   "author": "Davier Enrique Perez Cabrera",

@@ -1,4 +1,4 @@
-# binary-search-library  
+# binary-search  
 
 
 #### implementing binary search without use recursive function to find the index of a number list sorted
